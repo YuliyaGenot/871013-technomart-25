@@ -31,7 +31,7 @@
           </p>
         </div>
         <ul class="user-navigation">
-          <li class="button"><a class="login-link">Войти</a></li>
+          <li class="button"><a class="login-link" href="login.html">Войти</a></li>
           <li class="button"><a class="chek-in">Регистрация</a></li>
         </ul>
       </div>
@@ -91,6 +91,8 @@
               </div>
             </li>
           </ul>
+          <button class="button slider-button slider-button-back" type="button">Назад</button>
+          <button class="button slider-button slider-button-next" type="button">Вперед</button>
         </div>
       </section>
 
@@ -298,6 +300,54 @@
         </p>
       </div>
     </footer>
+
+
+    <section class="modal modal-login">
+      <h2 class="visually-hidden">Личный кабинет</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru"
+            method="post">
+        <label>Ваше имя:
+          <input class="login-icon-user" type="text"
+                   name="login" placeholder="Имя Фамилия">
+        </label>
+        <button class="button" type="submit">
+          ОТПРАВИТЬ
+        </button>
+      </form>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+           <img src="img/map-big.png" width="780" height="560" alt="Офис компании
+                по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal-close" type="button">
+           Закрыть
+        </button>
+    </section>
+
+    <section class="feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru"
+               method="post">
+          <label>Ваше имя:
+            <input type="text" name="name" value=""
+                placeholder="Имя фамилия">
+          </label>
+          <label>Ваше e-mail:
+            <input type="email" name="e-mail" value=""
+                placeholder="email@example.com">
+          </label>
+          <label>Текст письма:
+            <textarea  name="message" placeholder="В свободной форме">
+             В свободной форме
+            </textarea>
+          </label>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </section>
+
 
   </body>
 </html>
