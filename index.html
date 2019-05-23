@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="site-header">
@@ -12,20 +15,23 @@
              alt="Логотип Техномарт">
           </a>
         </div>
-        <div class="search">Поиск:
+        <div class="search">
+          <form action="" method="get">
+            <input name="search" placeholder="Поиск" type="search">
+          </form>
         </div>
-        <div class="marks">Закладки:0
+        <div class="marks"><a href="#">Закладки:0</a>
         </div>
-        <div class="basket">Корзина:0
+        <div class="basket"><a href="#">Корзина:0</a>
         </div>
-        <div class="chekout">Оформить заказ
+        <div class="chekout"><a href="#">Оформить заказ</a>
         </div>
       </div>
-      <div class="site-header-middle">
+      <div class="site-header-bottom">
         <h1>Интернет-магазин строительных материалов и
           инструментов для ремонта</h1>
         <div class="contacts">
-          <p>+7(812)555-05-55
+          <p class="phone">+7(812)555-05-55
           </p>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
@@ -34,8 +40,6 @@
           <li class="button"><a class="login-link" href="login.html">Войти</a></li>
           <li class="button"><a class="chek-in">Регистрация</a></li>
         </ul>
-      </div>
-      <div class="site-header-bottom">
         <nav class="site-navigation">
           <ul class="main-navigation">
             <li><a >Главная</a></li>
@@ -51,22 +55,23 @@
     </header>
 
     <main>
+
       <section class="main-menu">
         <div class="material">
           <h3>Материалы</h3>
-          <a class="button">На любой вкус</a>
+          <a class="button" href="#">На любой вкус</a>
         </div>
         <div class="instrument">
           <h3>Инструмент</h3>
-          <a class="button">На все случаи жизни</a>
+          <a class="button" href="#">На все случаи жизни</a>
         </div>
         <div class="technic">
           <h3>Техника</h3>
-          <a class="button">Для стройки</a>
+          <a class="button" href="#">Для стройки</a>
         </div>
         <div class="sale">
           <h3>Скидки 50%</h3>
-          <a class="button">На 350 товаров</a>
+          <a class="button" href="#">На 350 товаров</a>
         </div>
         <div class="delivery">
           <h3>Доставка</h3>

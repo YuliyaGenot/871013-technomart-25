@@ -1,0 +1,223 @@
+body {
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+header {
+  background-color: #f4f7f9;
+}
+a {
+  text-decoration: none;
+}
+.site-header {
+  background-color: #f4f7f9;
+}
+
+.site-header-top,
+.search input {
+  font-size: 17px;
+  font-family: Cuprum;
+  font-weight: normal;
+  line-height: 20px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.search input{
+  border: none;
+}
+
+.header-logo {
+  width: 220px;
+  height: 47px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+
+  background-color: #ee3643;
+}
+
+.site-header-top a,
+.site-navigation a {
+   color: #ffffff;
+}
+
+
+.chekout a {
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+}
+
+.header-logo a:hover {
+  background-color: #ca2c37;
+}
+
+.header-logo a:focus {
+  background-color: #ba2732;
+}
+
+.search input:hover,
+.marks a:hover,
+.basket a:hover {
+  background-color: #212a3a;
+}
+
+.search input:focus  {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.marks a:focus,
+.basket a:focus {
+  background-color: #161d29;
+  opacity: 0.6;
+}
+
+.chekout a:hover {
+  background-color: #5fbb2d;
+}
+
+.chekout a:focus {
+  opacity: 0.6;
+}
+
+.site-header-bottom h1 {
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.44;
+
+  text-align: left;
+  color: #ee3643;
+}
+
+.phone {
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  text-align: left;
+  color: #ee3643;
+}
+
+.user-navigation,
+.main-navigation {
+  list-style: none;
+}
+.user-navigation a {
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.user-navigation a:hover {
+  color: #ee3643;
+}
+
+.user-navigation a:focus {
+  opacity: 0.3;
+}
+
+.site-navigation {
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+}
+
+.main-navigation a {
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: normal;
+
+  line-height: 1;
+  text-align: left;
+  color: #ffffff;
+}
+
+
+
+main {
+  background-color: #ffffff;
+}
+
+.main-menu h3 {
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #ffffff;
+}
+
+.main-menu a {
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.main-navigation a:hover {
+  background-color: #293449;
+}
+
+.main-navigation a:focus {
+  background-color: #1d2739;
+  opacity: 0.5;
+}
+
+.material {
+  background-color: #ffbf47;
+}
+.instrument {
+  background-color: #3bbce3;
+}
+
+.technic {
+  background-color: #dc91d8;
+}
+
+.sale {
+  background-color: #8ed78f;
+}
+.delivery {
+  background-color: #ffc047;
+}
+.main-menu a {
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.main-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-menu a:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo-slide a {
+  width: 195px;
+  height: 38px;
+  background-color: #ee3643;
+}
+
+.promo-slide a:hover {
+  background-color: #ca2c37;
+}
+
+.promo-slide a:focus {
+  background-color: #ba2732;
+}
