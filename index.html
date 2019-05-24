@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -16,8 +16,8 @@
           </a>
         </div>
         <div class="search">
-          <form action="" method="get">
-            <input name="search" placeholder="Поиск" type="search">
+          <form  method="get">
+            <input name="search" placeholder="Поиск" type="text">
           </form>
         </div>
         <div class="marks"><a href="#">Закладки:0</a>
@@ -33,7 +33,7 @@
         <div class="contacts">
           <p class="phone">+7(812)555-05-55
           </p>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
         </div>
         <ul class="user-navigation">
@@ -109,16 +109,16 @@
         <ul>
 
           <li class="popular-item">
-            <h3>
-              <a href="catalog-item.html">Перфоратор BOSCH BFG 3000</a>
-            </h3>
+            <a href="catalog-item.html">
+              <h3>Перфоратор BOSCH BFG 3000</h3>
+            </a>
             <a href="#">
               <img src="img/item-image_9000.jpg" alt="Перфоратор BOSCH BFG
               9000" width="218" height="170">
             </a>
             <ul>
-              <li><a class="buy-button">Купить</a></li>
-              <li><a class="mark-button">В закладки</a></li>
+              <li class="buy-button"><a >Купить</a></li>
+              <li class="mark-button"><a >В закладки</a></li>
             </ul>
             <b>32500 р.</b>
             <a class="button" href="#">
@@ -133,8 +133,8 @@
                    3000" width="218" height="170">
             </a>
             <ul>
-              <li><a class="buy-button">Купить</a></li>
-              <li><a class="mark-button">В закладки</a></li>
+              <li class="buy-button"><a >Купить</a></li>
+              <li class="mark-button"><a >В закладки</a></li>
             </ul>
             <b>22500 р.</b>
             <a class="button" href="#">
@@ -149,8 +149,8 @@
                     6000" width="218" height="170">
             </a>
             <ul>
-              <li><a class="buy-button">Купить</a></li>
-              <li><a class="mark-button">В закладки</a></li>
+              <li class="buy-button"><a >Купить</a></li>
+              <li class="mark-button"><a >В закладки</a></li>
             </ul>
             <b>30500 р.</b>
             <a class="button" href="#">
@@ -165,8 +165,8 @@
                   2000" width="218" height="170">
             </a>
             <ul>
-              <li><a class="buy-button">Купить</a></li>
-              <li><a class="mark-button">В закладки</a></li>
+              <li class="buy-button"><a >Купить</a></li>
+              <li class="mark-button"><a >В закладки</a></li>
             </ul>
             <a class="button" href="#">
               <b>15500 р.</b>
@@ -180,30 +180,30 @@
         <a class="button">Все производители</a>
         <ul>
           <li>
-            <a class="logo Bosch"><img src="img/bosch.png" alt="Bosch"></a>
+            <a class="logo Bosch" href="#"><img src="img/bosch.png" alt="Bosch"></a>
           </li>
           <li>
-            <a class="logo Makita"><img src="img/makita.png" alt="Makita"></a>
+            <a class="logo Makita" href="#"><img src="img/makita.png" alt="Makita"></a>
           </li>
           <li>
-            <a class="logo DeWalt"><img src="img/de-walt.png" alt="DeWalt"></a>
+            <a class="logo DeWalt" href="#"><img src="img/de-walt.png" alt="DeWalt"></a>
           </li>
           <li>
-            <a class="logo Interskol"><img src="img/interskol.png"
+            <a class="logo Interskol" href="#"><img src="img/interskol.png"
               alt="Интерскол"></a>
           </li>
           <li>
-            <a class="logo Hitachi"><img src="img/hitachi.png"
+            <a class="logo Hitachi" href="#"><img src="img/hitachi.png"
               alt="Hitachi"></a>
           </li>
           <li>
-            <a class="logo LG"><img src="img/lg.png" alt="LG"></a>
+            <a class="logo LG" href="#"><img src="img/lg.png" alt="LG"></a>
           </li>
           <li>
-            <a class="logo AEG"><img src="img/aeg.png" alt="AEG"></a>
+            <a class="logo AEG" href="#"><img src="img/aeg.png" alt="AEG"></a>
           </li>
           <li>
-            <a class="logo metabo"><img src="img/metabo.png" alt="metabo"></a>
+            <a class="logo metabo" href="#"><img src="img/metabo.png" alt="metabo"></a>
           </li>
         </ul>
       </section>
@@ -214,9 +214,9 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <ul class="service-menu">
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Кредит</a></li>
         </ul>
         <ul class="service-slider">
           <li class="service-delivery">
@@ -252,8 +252,7 @@
       </section>
 
       <section class="about-company">
-       <h2>Компания "ТЕХНОМАРТ"
-       </h2>
+       <h2>Компания "ТЕХНОМАРТ"</h2>
        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
          для ремонта и строительства не оставит равнодушными
          любителей сэкономить на гастарбайтерах.</p>
@@ -279,7 +278,7 @@
 
     <footer>
       <div class="footer-top">
-        <a class="logo"><img src="img/logo-technomart.svg"
+        <a class="footer-logo"><img src="img/logo-technomart.svg"
           alt="Логотип Техномарт">
         </a>
         <ul class="footer-main-navigation">
@@ -315,7 +314,7 @@
         </div>
         <p class="footer-mail-contacts">
             Обратная связь:<br>
-           <a class="mail">mail@htmlacademy.ru</a>
+           <a class="mail" href="#">mail@htmlacademy.ru</a>
         </p>
         <p class="footer-maker">
             Разработано-<br>
