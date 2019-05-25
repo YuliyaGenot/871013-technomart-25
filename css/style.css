@@ -4,6 +4,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 header {
@@ -17,9 +18,9 @@ a {
 }
 
 .site-header-top,
-.search input {
+.search {
   font-size: 17px;
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: normal;
   line-height: 20px;
   color: #ffffff;
@@ -27,7 +28,7 @@ a {
   background-color: #293449;
 }
 
-.search input{
+.search {
   border: none;
 }
 
@@ -45,7 +46,7 @@ a {
 }
 
 
-.chekout a {
+.chekout{
   width: 150px;
   height: 42px;
   background-color: #63a63e;
@@ -59,33 +60,33 @@ a {
   background-color: #ba2732;
 }
 
-.search input:hover,
-.marks a:hover,
-.basket a:hover {
+.search:hover,
+.marks:hover,
+.basket:hover {
   background-color: #212a3a;
 }
 
-.search input:focus  {
+.search:focus  {
   background-color: #ffffff;
   color: #000000;
 }
 
-.marks a:focus,
-.basket a:focus {
+.marks:focus,
+.basket:focus {
   background-color: #161d29;
   opacity: 0.6;
 }
 
-.chekout a:hover {
+.chekout:hover {
   background-color: #5fbb2d;
 }
 
-.chekout a:focus {
+.chekout:focus {
   opacity: 0.6;
 }
 
 .site-header-bottom h1 {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
@@ -97,7 +98,7 @@ a {
 }
 
 .phone {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   font-weight: normal;
   font-style: normal;
@@ -107,7 +108,7 @@ a {
 }
 
 .adress {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
 
@@ -121,7 +122,7 @@ a {
   list-style: none;
 }
 .user-navigation a {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   font-weight: normal;
 
@@ -145,7 +146,7 @@ a {
 }
 
 .main-navigation a {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   font-weight: normal;
 
@@ -161,7 +162,7 @@ main {
 }
 
 .main-menu h3 {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
@@ -170,7 +171,7 @@ main {
 }
 
 .main-menu a {
-  font-family: Cuprum;
+
   font-size: 14px;
 
   line-height: 1.29;
@@ -236,7 +237,7 @@ main {
   color: #000000;
 }
 
-.buy-button  a {
+.buy-button a {
   color: #ffffff;
   width: 135px;
   height: 38px;
@@ -252,11 +253,10 @@ box-shadow: inset 0px -3px 0 0 #367315;
 background-color: #518534;
 }
 
-.mark-button  a {
+.mark-button a {
   width: 135px;
   height: 38px;
   border: solid 3px #63a63e;
-  font-family: Cuprum;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.29;
@@ -323,7 +323,6 @@ background-color: #293449;
 .footer-main-navigation a {
   width: 69px;
   height: 13px;
-  font-family: Cuprum;
   font-size: 18px;
 
   line-height: 1.33;
@@ -344,7 +343,6 @@ color: rgba(241, 245, 247, 0.5);
 .footer-site-navigation a {
   width: 79px;
   height: 17px;
-  font-family: Cuprum;
   font-size: 18px;
 
   line-height: 1.33;
@@ -369,7 +367,6 @@ color: rgba(255, 209, 128, 0.5);
 
 .footer-mail-contacts a,
 .footer-maker a {
-  font-family: Cuprum;
   font-size: 16px;
   color: #ffd180;
 }
@@ -384,7 +381,7 @@ color: rgba(255, 209, 128, 0.5);
 }
 /* CSS каталог*/
 .site-catalog {
-  font-family: PTSans;
+  font-family: "PTSans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-style: normal;
@@ -400,14 +397,39 @@ color: rgba(255, 209, 128, 0.5);
 .catalog-list {
   list-style: none;
 }
-.sorting,
-.sorting-button {
-  font-family: PTSans;
+
+.sorting {
+  width: 700px;
+  height: 38px;
+  background-color: #f7f3ec;
+}
+
+.sorting h3{
+  font-family: "PTSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
   text-align: left;
   color: #000000;
+}
+.sorting-button {
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  text-transform: uppercase;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-button:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-button:focus {
+  color: #ee3643;
+  border-bottom: none;
 }
 
 .catalog-item {
@@ -416,7 +438,7 @@ color: rgba(255, 209, 128, 0.5);
  border: solid 1px #e5e5e5;
 }
 .catalog-item h3 {
-  font-family: PTSans;
+  font-family: "PTSans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.11;
