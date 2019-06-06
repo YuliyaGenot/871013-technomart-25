@@ -30,6 +30,18 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.button {
+  display: block;
+  height: 28px;
+  background-color: #ee3643;
+  font-family: "Cuprum", "Atial", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 3px;
+
+}
 .site-header {
   background-color: #f4f7f9;
   color: #ffffff;
@@ -100,14 +112,14 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.marks:before {
+.marks::before {
   content: "";
 
   position: absolute;
   top: 10px;
   left: 10px;
 
-  width: 16px;
+  width: 14px;
   height: 16px;
 
   background-image: url("img/icon-bookmark.svg");
@@ -124,7 +136,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.chekout:before {
+.chekout::before {
   content: "";
 
   position: absolute;
@@ -210,7 +222,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.phone:before {
+.phone::before {
   content: "";
 
   position: absolute;
@@ -220,9 +232,11 @@ input[type="radio"].visually-hidden {
   width: 16px;
   height: 16px;
 
+
   background-image: url("img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
 }
 
 .adress {
@@ -294,6 +308,7 @@ input[type="radio"].visually-hidden {
   background-color: #32425c;
   margin: 0 auto;
   padding: 0;
+  margin-bottom: 60px;
 }
 
 
@@ -333,6 +348,7 @@ main {
   margin: 0;
   padding: 0;
 }
+
 .main-menu {
   width: 940px;
   display: flex;
@@ -357,13 +373,29 @@ main {
 }
 
 .main-menu .menu {
-  width: 300px;
-  height: 123px;
+  width: 250px;
   margin-left: 20px;
   margin-bottom: 20px;
+  padding: 22px 25px;
 }
 .main-menu .material {
   margin-left: 0;
+  position: relative;
+}
+.material::after {
+  content: " ";
+
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  width: 44px;
+  height: 65px;
+
+  background-image: url("img/icon-material.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }
 
 .promo-perforators {
@@ -377,9 +409,14 @@ main {
   line-height: 1.25;
   text-align: left;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .main-menu a {
+  width: 135px;
+  margin-top: 10px;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
@@ -891,9 +928,6 @@ color: rgba(255, 209, 128, 0.5);
   text-align: left;
   color: #000000;
 }
-.inner-navigation {
-  margin-bottom: 60px;
-}
 
 .site-header-catalog {
   margin-bottom: 0;
@@ -1093,4 +1127,101 @@ color: rgba(255, 209, 128, 0.5);
   margin: 0;
   padding: 20px 0 10px;
 
+}
+
+.modal {
+  display: none;
+  position: fixed;
+
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px rgba(0, 1, 1, 0.75);
+  color: #000000;
+}
+
+.modal-login {
+  padding: 50px 80px 0 80px;
+  border-top: 4px solid #ee3643;
+}
+
+.login-form label {
+  margin: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1;
+
+
+  display: flex;
+  flex-direction: column;
+}
+
+.login-icon-user {
+  width: 220px;
+  margin: 10px 0;
+}
+
+.modal-container {
+  background-color: #f1f1f1;
+  height:
+}
+
+.modal-button-container .button {
+  width: 100%;
+}
+.modal-login {
+  top: 184px;
+  left: 64px;
+  width: 540px;
+
+}
+
+.modal-map {
+  top: 50%;
+  left: 50%;
+
+  width: 940px;
+  height: 446px;
+  margin-top: -220px;
+  margin-left: -470px;
+  display: none;
+}
+
+.modal-map p {
+  margin: 0;
+}
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: #ee3643;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
