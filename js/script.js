@@ -36,11 +36,6 @@ link.addEventListener("click", function (evt) {
 
 });
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-show");
-  popup.classList.remove("modal-error");
-});
 
 form.addEventListener("submit", function (evt) {
   if (!login.value || !password.value) {
@@ -94,4 +89,11 @@ mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     feedbackPopup.classList.remove("modal-show");
     feedbackPopup.classList.remove("modal-error");
+  });
+
+  
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
   });
