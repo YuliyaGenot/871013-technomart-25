@@ -843,7 +843,7 @@ border: solid 3px #32425c;
   background-image:
             url("../img/line-shadow.png"),
             url("../img/shadow.jpg");
-  background-position: 0, 0;
+  background-position: 0 0;
   background-repeat: no-repeat, no-repeat;
   z-index: 10;
 }
