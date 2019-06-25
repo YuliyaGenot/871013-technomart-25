@@ -5,14 +5,14 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <header class="site-header site-header-catalog">
       <div class="container-header-top">
         <div class="site-header-top">
           <div class="container">
-            <a class="header-logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип Техномарт">
+            <a class="header-logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип Техномарт" width="109" height="19">
             </a>
             <div  class="search">
               <label for="search-form" class="visually-hidden">Поиск:</label>
@@ -124,63 +124,34 @@
             <legend class="name-filters-marks">Производители:</legend>
             <ul class="filter-marks-list">
               <li class="filter-item">
-                <label for="filter-input-Bosch">Bosch</label>
-                <input id="filter-input-Bosch" class="visually-hidden" type="checkbox" name="bosch" >
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
-                	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
-                <g >
-                </g>
-                <g >
-                	<g>
-                		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
-                		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-                			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-                	</g>
-                </g>
-                </svg>
+                <label>
+                  <input class="visually-hidden filter-input" type="checkbox" name="bosch"  checked>
+                  <span class="check-box"></span>Bosch
+                </label>
               </li>
               <li class="filter-item">
-                <label for="filter-input-Interscol">Интерскол</label>
-                <input id="filter-input-Interscol" class="visually-hidden" type="checkbox" name="interscol" >
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-                <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-                	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-                </svg>
+                <label>
+                  <input class="visually-hidden filter-input" type="checkbox" name="interscol">
+                  <span class="check-box"></span>Интерскол
+                </label>
+                </li>
+              <li class="filter-item">
+                <label>
+                  <input class="visually-hidden filter-input" type="checkbox" name="makita" checked>
+                  <span class="check-box"></span>Makita
+                </label>
               </li>
               <li class="filter-item">
-                <label for="filter-input-Makita">Makita</label>
-                <input id="filter-input-Makita" class="visually-hidden" type="checkbox" name="makita" >
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
-                	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
-                <g >
-                </g>
-                <g >
-                	<g>
-                		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
-                		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-                			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-                	</g>
-                </g>
-                </svg>
+                <label>
+                  <input class="visually-hidden filter-input" type="checkbox" name="dewalt" >
+                  <span class="check-box"></span>DeWalt
+                </label>
               </li>
               <li class="filter-item">
-                <label for="filter-input-DeWalt">DeWalt</label>
-                <input id="filter-input-DeWalt" class="visually-hidden" type="checkbox" name="dewalt" >
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-                <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-                	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-                </svg>
-              </li>
-              <li class="filter-item">
-                <label for="filter-input-Hitachi">Hitachi</label>
-                <input id="filter-input-Hitachi" class="visually-hidden" type="checkbox" name="hitachi" >
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
-                <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-                	C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
-                </svg>
+                <label>
+                  <input class="visually-hidden filter-input" type="checkbox" name="hitachi">
+                  <span class="check-box"></span>Hitachi
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -188,23 +159,16 @@
             <legend class="name-filters-nutrition">Питание:</legend>
             <ul class="filter-nutrition-list">
               <li class="filter-nutrition-item">
-                <label for="filter-nutrition-battery">Аккумуляторные</label>
-                <input class="visually-hidden" id="filter-nutrition-battery" type="radio" name="product-group">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-                <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-                	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-                <circle cx="12.5" cy="12.5" r="4.5"/>
-                </svg>
+                <label>
+                  <input class="visually-hidden"  type="radio" name="product-group" checked>
+                  <span class="radio-button"></span>Аккумуляторные
+                </label>
               </li>
               <li class="filter-nutrition-item">
-                <label for="filter-nutrition-mains">Сетевые</label>
-                <input class="visually-hidden" id="filter-nutrition-mains" type="radio" name="product-group">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
-                <path d="M12.5,4c4.687,0,8.5,3.813,8.5,8.5c0,4.687-3.813,8.5-8.5,8.5C7.813,21,4,17.187,4,12.5C4,7.813,7.813,4,12.5,4 M12.5,0
-                	C5.597,0,0,5.597,0,12.5S5.597,25,12.5,25S25,19.403,25,12.5S19.403,0,12.5,0L12.5,0z"/>
-                </svg>
+                <label>
+                  <input class="visually-hidden" type="radio" name="product-group">
+                  <span class="radio-button"></span>Сетевые
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -448,7 +412,7 @@
     <footer>
       <div class="footer-top">
         <div class="footer-top-container">
-          <a class="footer-logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип Техномарт">
+          <a class="footer-logo" href="index.html"><img src="img/logo-technomart.svg" alt="Логотип Техномарт" width="138" height="23">
           </a>
           <ul class="footer-main-navigation">
             <li><a href="#">Компания</a></li>
@@ -520,12 +484,12 @@
               <a class="mail" href="#">mail@htmlacademy.ru</a>
             </p>
             <p class="footer-maker">Разработано —
-              <a class="footer-maker-link" href="https://up.htmlacademy.ru/htmlcss/25/project/technomart#technomart-3-5">htmlacademy.ru</a>
+              <a class="footer-maker-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>
         </div>
       </div>
     </footer>
-
+    <script src="js/script-min.js"></script>
   </body>
 </html>

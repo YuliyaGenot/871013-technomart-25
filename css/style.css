@@ -2,6 +2,7 @@ body {
   margin: 0;
   min-width: 960px;
   font-family: "Cuprum", "Arial", sans-serif;
+  z-index: 0;
 }
 a {
   text-decoration: none;
@@ -42,7 +43,7 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
   font-family: "Cuprum", "Atial", sans-serif;
   font-size: 14px;
-  line-height: 18px;;
+  line-height: 18px;
   color: #ffffff;
   text-align: center;
   padding: 12px 10px 8px;
@@ -721,7 +722,7 @@ main {
 
   position: absolute;
   top: 26px;
-  right: 46px;;
+  right: 46px;
 
   width: 59px;
   height: 72px;
@@ -1106,7 +1107,7 @@ main {
   list-style: none;
 
   background-color: rgba(255,255,255,0.9);
-  z-index: 10;
+  z-index: 2;
 }
 
 .catalog-item .actions a {
@@ -2066,32 +2067,68 @@ color: #ffffff;
   position: relative;
 }
 
-.filter-item svg,
-.filter-nutrition-item svg {
+.filter-item .check-box {
   position: absolute;
   top: 8px;
   left: 1px;
+  width: 23px;
+  height: 23px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23c5c5c5' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
 }
 
-.filter-item polygon,
-.filter-item path,
-.filter-nutrition-item circle,
-.filter-nutrition-item path {
-  fill: #c5c5c5;
-}
-.filter-item:hover polygon,
-.filter-item:hover path,
-.filter-nutrition-item:hover circle,
-.filter-nutrition-item:hover path {
-  fill: #b5b5b5;
+.filter-item input:checked + .check-box {
+  width: 27px;
+  height: 23px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23c5c5c5' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23c5c5c5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
 }
 
-.filter-item-block polygon,
-.filter-item-block path,
-.filter-nutrition-item-block circle,
-.filter-nutrition-item-block path {
-  fill: #b5b5b5;
-  opacity: 0.3;
+.filter-item input:hover + .check-box {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23b5b5b5' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E");
+}
+
+.filter-item input:checked:hover + .check-box {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23b5b5b5' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23b5b5b5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");
+}
+
+
+.filter-input:disabled ~ label {
+  color: #000000;
+
+  opacity: 0.4;
+}
+
+.filter-nutrition-item .radio-button {
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 25px;
+  height: 25px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath fill='%23c5c5c5' d='M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z'/%3E%3C/svg%3E");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+}
+
+.filter-nutrition-item input:checked + .radio-button {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath fill='%23c5c5c5' d='M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z'/%3E%3Ccircle fill='%23c5c5c5' cx='12.5' cy='12.5' r='4.5'/%3E%3C/svg%3E");
+}
+
+.filter-nutrition-item input:hover + .radio-button {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath fill='%23b5b5b5' d='M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z'/%3E%3C/svg%3E");
+}
+
+.filter-nutrition-item input:checked:hover + .radio-button {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath fill='%23b5b5b5' d='M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z'/%3E%3Ccircle fill='%23b5b5b5' cx='12.5' cy='12.5' r='4.5'/%3E%3C/svg%3E");
+}
+
+
+.filter-input:disabled ~ label {
+  color: #000000;
+
+  opacity: 0.4;
 }
 
 
@@ -2328,13 +2365,32 @@ color: #ffffff;
   margin-top: 25px;
 }
 
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .modal {
   position: fixed;
-
+  display: none;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 20px 40px rgba(0, 1, 1, 0.75);
           box-shadow: 0px 20px 40px rgba(0, 1, 1, 0.75);
   color: #000000;
+  z-index: 20;
 }
 
 .modal-login {
@@ -2477,8 +2533,8 @@ color: #ffffff;
 
 .feedback {
   display: none;
-  top: 184px;
-  left: 64px;
+  top: 150px;
+  left: 290px;
 
   padding: 0;
   border-top: 7px solid #ee3643;
@@ -2592,4 +2648,5 @@ color: #ffffff;
 }
 .modal-show {
   display: block;
+  animation: show 0.5s;
 }
